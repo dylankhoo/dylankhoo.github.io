@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class="page-intro">
+{{ content }}
+</div>
+
+<ul class="thought-list">
+    {%- for thought in site.thoughts %}
+    <li>
+        <h2 class="thought-title"><a href="{{ thought.url | relative_url }}">{{ thought.title }}</a></h2>
+        {%- if thought.description %}
+        <p class="thought-description">{{ thought.description }}</p>
+        {%- endif %}
+    </li>
+    {%- endfor %}
+</ul>

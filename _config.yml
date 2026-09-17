@@ -1,0 +1,28 @@
+title: Dylan Khoo
+description: Occasional rambling and future projects.
+
+baseurl: ""
+
+theme: null
+
+markdown: kramdown
+
+collections:
+  thoughts:
+    output: true
+    permalink: /thoughts/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: thoughts
+    values:
+      layout: post
+
+exclude:
+  - README.md

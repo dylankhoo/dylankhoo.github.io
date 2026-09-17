@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.url == "/" %}{{ site.title }}{% else %}{{ page.title }} · {{ site.title }}{% endif %}</title>
+    {%- assign description = page.description | default: site.description %}
+    {%- if description %}
+    <meta name="description" content="{{ description | strip_html | strip_newlines | escape }}">
+    {%- endif %}
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+</head>
+
+<body>
+    <header>
+        <div class="header-left">
+            <h1>{{ site.title }}</h1>
+            <nav class="nav">
+                <a href="{{ '/' | relative_url }}"{% if page.url == "/" %} class="active"{% endif %}>About</a>
+                <a href="{{ '/thoughts/' | relative_url }}"{% if page.url contains "/thoughts/" %} class="active"{% endif %}>Thoughts</a>
+                <a href="{{ '/projects/' | relative_url }}"{% if page.url == "/projects/" %} class="active"{% endif %}>Projects</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content">
+{{ content }}
+    </main>
+</body>
+
+</html>

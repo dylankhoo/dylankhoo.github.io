@@ -1,2 +1,3 @@
 # dylankhoo.github.io
-Personal Website
+
+Personal Website. Built with Jekyll.
