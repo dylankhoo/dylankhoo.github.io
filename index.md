@@ -6,11 +6,13 @@ permalink: /
 
 Hi I'm Dylan! 
 
-I'm a final undergraduate at National University of Singapore. I spent my last year abroad at the University of Cambridge, where I was first exposed to AI safety. I now consider it as one of the greatest concerns of our time and I'm hoping to do something about it.
+I'm a final undergraduate at National University of Singapore. I spent my last year abroad at the University of Cambridge, where I was first exposed to AI safety. I now consider it as one of the greatest concerns of our time and I'm hoping to do something about it. Previously pursued SWE but now committed to AI safety.
 
 See my [rambles](/thoughts/) and what I'm [working on](/projects/).
 
-Previously I was pursuing Software Engineering, and did some work at these companies:
+<hr class="section-rule">
+
+<h2 class="section-heading">Experience</h2>
 
 <ol class="timeline">
     <li>
