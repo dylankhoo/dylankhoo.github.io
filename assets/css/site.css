@@ -278,3 +278,76 @@ a:focus-visible {
         font-size: 2rem;
     }
 }
+
+.timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-left: 1px solid #eee;
+}
+
+.timeline > li {
+    position: relative;
+    margin: 0;
+    padding: 0 0 2.5rem 1.75rem;
+}
+
+.timeline > li:last-child {
+    padding-bottom: 0;
+}
+
+.timeline > li::before {
+    content: "";
+    position: absolute;
+    left: -4px;
+    top: 0.45rem;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #fefefe;
+    border: 1px solid #bbb;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.timeline > li:hover::before {
+    background: #777;
+    border-color: #777;
+}
+
+.timeline-date {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #999;
+    margin: 0 0 0.3rem;
+}
+
+.timeline-org {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    color: #333;
+    margin: 0;
+}
+
+main .timeline-org {
+    margin-top: 0;
+}
+
+.timeline-role {
+    font-size: 1rem;
+    font-style: italic;
+    color: #666;
+    margin: 0;
+}
+
+.timeline-note {
+    color: #555;
+    margin: 0.5rem 0 0;
+}
+
+@media (max-width: 640px) {
+    .timeline > li {
+        padding-left: 1.25rem;
+    }
+}
