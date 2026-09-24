@@ -6,7 +6,7 @@ permalink: /
 
 Hi I'm Dylan! 
 
-I'm a final undergraduate at National University of Singapore. I spent my last year abroad at the University of Cambridge, where I was first exposed to AI safety. I now consider it as one of the greatest concerns of our time and I'm hoping to do something about it. Previously pursued SWE but now committed to AI safety.
+I'm a final year undergraduate at National University of Singapore. I spent my last year abroad at the University of Cambridge, where I was first exposed to AI safety. I now consider it as one of the greatest concerns of our time and I'm hoping to do something about it. Previously pursued SWE but now committed to AI safety.
 
 See my [rambles](/thoughts/) and what I'm [working on](/projects/).
 
