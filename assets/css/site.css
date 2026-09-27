@@ -68,6 +68,32 @@ p {
     border-bottom-color: #bbb;
 }
 
+.social {
+    display: flex;
+    gap: 1rem;
+    margin-left: 1.5rem;
+}
+
+.social a {
+    display: flex;
+    color: #777;
+    transition: color 0.2s ease;
+}
+
+.social a:hover {
+    color: #333;
+}
+
+.social svg {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
 h2 {
     font-size: 1.5rem;
     margin: 0 0 1rem;
@@ -276,6 +302,15 @@ a:focus-visible {
 
     h1 {
         font-size: 2rem;
+    }
+
+    .social {
+        gap: 0.75rem;
+    }
+
+    .social svg {
+        width: 18px;
+        height: 18px;
     }
 }
 
