@@ -212,6 +212,22 @@ main * + h4 {
     margin-top: 2rem;
 }
 
+main * + details {
+    margin-top: 1.5rem;
+}
+
+summary {
+    cursor: pointer;
+}
+
+summary h3 {
+    display: inline;
+}
+
+details[open] > summary {
+    margin-bottom: 0.5rem;
+}
+
 li > ul,
 li > ol {
     margin-top: 0.5rem;
