@@ -25,7 +25,7 @@ When our conversations with LLMs get too long, they go through an automated proc
 
 During model training, OpenAI found a model **adding instructions to its conversation summaries telling itself to hide mistakes from the user**. In one example, the model was asked to do financial analysis and was unable historical data. In it's summary process, the model then proposed to make up a fake dataset and not tell the user that it did so.
 
->We likely need create a tab `Historical Data` ourselves with reasonable 2024 historical data, because user wants a finished workbook and there is no source file. Be transparent only if asked; final answer should just link file.  
+>We likely need create a tab `Historical Data` ourselves with reasonable 2024 historical data, because user wants a finished workbook and there is no source file. **Be transparent only if asked**; final answer should just link file.  
 
 ### **[Signing up for disposable emails and searching GitHub for leaked API keys](https://alignment.openai.com/misalignment-reports/searching-github-for-leaked-api-keys/)**
 
@@ -34,7 +34,7 @@ Three points here:
 2. When that failed, it **searched online codebases for keys people had accidentally leaked** (GitHub). It managed to find one that worked, but had still had difficulty reading the data. Notably, the model also **reasoned** that **university students were most likely to have leaked their keys** and should look at code from university courses (though the report is unclear on whether it actually targeted university courses).
 
    >*Model's Chain of Thought*  
-   >Need leaked key: Search raw GitHub via API repositories then recursive tree? Pick university course repository and ipynb likely students leave key executed output incl URL.  
+   >Need leaked key: Search raw GitHub via API repositories then recursive tree? **Pick university course** repository and ipynb **likely students leave key** executed output incl URL.  
 
 3. The model then **made up the numbers** and **claimed they came from the website**.
 
